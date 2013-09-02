@@ -1,6 +1,11 @@
 fisa-vim-config
 ===============
 
+Installation
+------------
+``git clone git@github.com:kubaceg/fisa-vim-config.git .vimconfig && ln -s ~/.vimconfig/.vimrc ~/.vimrc``
+
+
 my vim configuration (lot of python, autocompletion, fuzzy finder, debugger, ...)
 
 What is this?
