@@ -88,6 +88,8 @@ Bundle 'Wombat'
 " Yank history navigation
 Bundle 'YankRing.vim'
 
+Bundle 'nanotech/jellybeans.vim'
+
 " Installing plugins the first time
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -287,9 +289,11 @@ else
 endif
 
 " colors for gvim
-if has('gui_running')
-    colorscheme wombat
-endif
+"if has('gui_running')
+colorscheme jellybeans
+syntax on
+"endif
+
 
 " when scrolling, keep cursor 3 lines away from screen border
 set scrolloff=3
