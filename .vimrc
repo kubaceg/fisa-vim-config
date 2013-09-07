@@ -25,7 +25,7 @@ Bundle 'gmarik/vundle'
 " Bundles from GitHub repos:
 
 " Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
+" Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
 " Code commenter
@@ -308,3 +308,19 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " to use fancy symbols for powerline, uncomment the following line and use a
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
+"
+:set spell spelllang=en,pl    
+
+
+if has("gui_running")
+    set guifont=Inconsolata\ Medium\ 10
+    set tw=150
+    " pasek przewijania
+    set guioptions-=r
+    " toolbar
+    set guioptions-=T
+    " " pasek menu
+    set guioptions-=m
+    " " pasek menu skrot F1
+    nnoremap <C-F1> :if &go=~#'m'<Bar>set go-=m<Bar>set go-=T<Bar>else<Bar>set go+=m<Bar>set go+=T<Bar>endif<CR>
+endif
