@@ -309,8 +309,6 @@ let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
 " patched font (more info on the README.rst)
 " let g:Powerline_symbols = 'fancy'
 "
-:set spell spelllang=en,pl    
-
 
 if has("gui_running")
     set guifont=Inconsolata\ Medium\ 10
