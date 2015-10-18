@@ -24,10 +24,12 @@ Bundle 'gmarik/vundle'
 
 " Bundles from GitHub repos:
 
-" Python and PHP Debugger
-Bundle 'fisadev/vim-debug.vim'
 " Better file browser
 Bundle 'scrooloose/nerdtree'
+" Nice icons for vim
+Bundle 'ryanoasis/vim-webdevicons'
+" Theme
+Plugin 'christophermca/meta5'
 " Code commenter
 Bundle 'scrooloose/nerdcommenter'
 " Class/module browser
@@ -38,14 +40,10 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'fisadev/vim-ctrlp-cmdpalette'
 " Zen coding
 Bundle 'mattn/emmet-vim'
-" Git integration
-" Bundle 'motemen/git-vim'
 " Tab list panel
 Bundle 'kien/tabman.vim'
 " Powerline
 Bundle 'Lokaltog/vim-powerline'
-" Terminal Vim with 256 colors colorscheme
-Bundle 'fisadev/fisa-vim-colorscheme'
 " Consoles as buffers
 Bundle 'rosenfeld/conque-term'
 " Pending tasks list
@@ -56,39 +54,22 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 " Indent text object
 Bundle 'michaeljsmith/vim-indent-object'
-" Python mode (indentation, doc, refactor, lints, code checking, motion and
-" operators, highlighting, run and ipdb breakpoints)
-Bundle 'klen/python-mode'
 " Snippets manager (SnipMate), dependencies, and snippets repo
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 " Git diff icons on the side of the file lines
-"Bundle 'airblade/vim-gitgutter'
-" Relative numbering of lines (0 is the current line)
-" (disabled by default because is very intrusive and can't be easily toggled
-" on/off. When the plugin is present, will always activate the relative 
-" numbering every time you go to normal mode. Author refuses to add a setting 
-" to avoid that)
-" Bundle 'myusuf3/numbers.vim'
-
-" Bundles from vim-scripts repos
+Bundle 'airblade/vim-gitgutter'
 
 " Autocompletion
 Bundle 'AutoComplPop'
-" Python code checker
-Bundle 'pyflakes.vim'
 " Search results counter
 Bundle 'IndexedSearch'
 " XML/HTML tags navigation
 Bundle 'matchit.zip'
-" Gvim colorscheme
-Bundle 'Wombat'
 " Yank history navigation
 Bundle 'YankRing.vim'
-
-Bundle 'nanotech/jellybeans.vim'
 
 " Installing plugins the first time
 if iCanHazVundle == 0
@@ -281,18 +262,10 @@ let g:tabman_focus  = 'tf'
 " use 256 colors when possible
 if &term =~? 'mlterm\|xterm\|xterm-256\|screen-256'
 	let &t_Co = 256
-    " color
-    colorscheme fisa
+    colorscheme meta5
 else
-    " color
     colorscheme delek
 endif
-
-" colors for gvim
-"if has('gui_running')
-colorscheme jellybeans
-syntax on
-"endif
 
 
 " when scrolling, keep cursor 3 lines away from screen border
