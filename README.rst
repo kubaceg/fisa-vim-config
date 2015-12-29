@@ -3,7 +3,7 @@ fisa-vim-config
 
 Installation
 ------------
-``git clone https://github.com/kubaceg/fisa-vim-config.git .vimconfig && ln -s ~/.vimconfig/.vimrc ~/.vimrc``
+``git clone https://github.com/kubaceg/fisa-vim-config.git ~/.vimconfig && ln -s ~/.vimconfig/.vimrc ~/.vimrc``
 
 
 my vim configuration (lot of python, autocompletion, fuzzy finder, debugger, ...)
