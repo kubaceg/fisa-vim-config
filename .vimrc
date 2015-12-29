@@ -70,6 +70,9 @@ Bundle 'IndexedSearch'
 Bundle 'matchit.zip'
 " Yank history navigation
 Bundle 'YankRing.vim'
+" VCL syntax
+Bundle 'protochron/vim-syntax-vcl'
+
 
 " Installing plugins the first time
 if iCanHazVundle == 0
